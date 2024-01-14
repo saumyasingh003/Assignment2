@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel= "stylesheet"/> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/charts.css/dist/charts.min.css">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <title>Assignment</title>
+  </head>
+
+  <body>
+    <nav class="sidebar close">
+      <div class="menu-bar">
+        <ul class="menu-links">
+          <li class="search-box">
+            <i class="bx bx-search icon"></i>
+          </li>
+
+          <li class="nav-link">
+            <a href="#">
+              <i class="bx bx-home-alt icon"></i>
+            </a>
+          </li>
+
+          <li class="nav-link">
+            <a href="#">
+              <i class="bx bx-wallet icon"></i>
+            </a>
+          </li>
+
+          <li class="nav-link">
+            <a href="#">
+              <i class="bx bx-list-ul icon"></i>
+            </a>
+          </li>
+
+          <li class="nav-link">
+            <a href="#">
+              <i class="bx bx-user icon"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="side-footer">
+        <ul>
+          <li>
+            <a href="#">
+              <i class="bx bx-bell icon"></i>
+              <span class="text nav-text">Notifications</span>
+            </a>
+          </li>
+          <li class="nav-link">
+            <a href="#">
+              <i class="bx bx-log-in icon"></i>
+              <span class="text nav-text">Login</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="home">
+      <div class="cards">
+        <div class="card-first">
+          <div class="intro">
+            <img src="dummy.avif" alt="Image Description" />
+            <div class="text-container">
+              <h3>Hi Mike,</h3>
+              <p>Welcome back</p>
+            </div>
+          </div>
+
+          <div class="account-info">
+            <h6>Today</h6>
+            <h2>$19,892</h2>
+            <p>Account Balance</p>
+            <h3>$4,000</h3>
+            <p>Year-to-Date Contributions</p>
+            <h3>$1,892</h3>
+            <p>Total Interest</p>
+          </div>
+
+          <div class="dropdown">
+            <button
+              class="btn btn-primary dropdown-toggle"
+              type="button"
+              id="dropdownMenuButton"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              I want to
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </div>
+
+          <div class="transactions">
+            <h5>Recent Transactions</h5>
+            <div class="transaction">
+              <p>2020-08-07</p>
+              <h6>Withdrawal transfer to Bank-XXX11</h6>
+            </div>
+            <hr />
+            <div class="transaction">
+              <p>2020-07-21</p>
+              <h6>Withdrawal transfer to Bank-XXX11</h6>
+            </div>
+            <hr />
+            <div class="transaction">
+              <p>2020-07-16</p>
+              <h6>Withdrawal transfer to Bank-XXX11</h6>
+            </div>
+            <hr />
+          </div>
+        </div>
+
+        <div class="card-second ">
+          <p class="retire">Retirement Income</p>
+          <h4>Starting Year 2056</h4>
+          <div class="result">
+            <div class="goal">
+              <h5>$300,000</h5>
+              <p>My Goal</p>
+              <hr class="blue-line" />
+            </div>
+            <div class="achieved">
+              <h5>59%</h5>
+              <p>Goal Achieved</p>
+              <hr class="blue-line" />
+            </div>
+            <div class="income">
+              <h5>$300</h5>
+              <p>Est. Monthly Income</p>
+              <hr class="blue-line" />
+            </div>
+          </div>
+          <div class="">
+            <h6>Contribution Overtime</h6>
+          </div>
+          <div class="graphs">
+
+            <table class="charts-css column hide-data show-labels  data-spacing-10">
+
+              <thead>
+                <tr>
+                  <th scope="col"> Month </th>
+                  <th scope="col"> Progress </th>
+                </tr>
+              </thead>
+            
+              <tbody>
+                <tr>
+                  <th scope="row"> 20 </th>
+                  <td style="--size: 0.2;" class="bar"> <span class="data">20 </span> </td>
+                </tr>
+                <tr>
+                 
+                  <td style="--size: 0.25;" class="bar"> <span class="data">  </span> </td>
+                </tr>
+                <tr>
+                  <th scope="row"> 25 </th>
+                  <td style="--size: 0.30;" class="bar"> <span class="data"> 25 </span> </td>
+                </tr>
+                <tr>
+               
+                  <td style="--size: 0.35;" class="bar"> <span class="data">  </span> </td>
+                </tr>
+                <tr>
+                  <th scope="row"> 30 </th>
+                  <td style="--size: 0.40;" class="bar"> <span class="data"> 30 </span> </td>
+                </tr>
+                <tr>
+                
+                  <td style="--size: 0.45;" class="bar"> <span class="data">  </span> </td>
+                </tr>
+                <tr>
+                  <th scope="row"> 35 </th>
+                  <td style="--size: 0.50;" class="bar"> <span class="data"> 35 </span> </td>
+                </tr>
+                <tr>
+               
+                  <td style="--size: 0.55;" class="bar"> <span class="data">  </span> </td>
+                </tr>
+                <tr>
+                  <th scope="row"> 40 </th>
+                  <td style="--size: 0.60;" class="bar"> <span class="data"> 40  </span> </td>
+                </tr>
+                <tr>
+                
+                  <td style="--size: 0.65;" class="bar"> <span class="data">  </span> </td>
+                </tr>
+                <tr>
+                  <th scope="row"> 60 </th>
+                  <td style="--size: 0.70;" class="bar"> <span class="data"> 60 </span> </td>
+                </tr>
+                <tr>
+                 
+                  <td style="--size: 0.75;" class="bar"> <span class="data">  </span> </td>
+                </tr>
+                <tr>
+                  <th scope="row"> 65 </th>
+                  <td style="--size: 0.85;" class="bar"> <span class="data"> 65  </span> </td>
+                </tr>
+              </tbody>
+            
+            </table>
+          </div>
+          <div class="pears">
+            <h6>How do I compare to my pears?</h6>
+            <p>These number represent current goal achievement</p>
+          </div>
+          <div class="personal-chart">
+            <div class="personal">
+              <div class="age">
+                <p>Age:</p>
+                <span style="margin-left:8px">Under 30 <i class="fa-solid fa-caret-down" style="color:gray"></i></span>
+              </div>
+             
+              <div class="salary">
+                <p>Salary:</p>
+                <span style="margin-left:8px"> K 20 - K 30 <i class="fa-solid fa-caret-down" style="color:gray"></i></span>
+                
+              </div>
+             
+              <div class="gender">
+                <p>Gender:</p>
+                <span style="margin-left:8px"> Male <i class="fa-solid fa-caret-down" style="color:gray"></i></span>
+              </div>
+
+            </div>
+            <div class="chart">
+              <div class="circular-progress" data-inner-circle-color="white" data-percentage="78" data-progress-color="#22D6AA" data-bg-color="#D3F7EE">
+                <div class="inner-circle"></div>
+                <p class="percentage">0%</p>
+              </div>
+              
+              <div class="circular-progress" data-inner-circle-color="white" data-percentage="95" data-progress-color="#22D6AA" data-bg-color="#D3F7EE">
+                <div class="inner-circle"></div>
+                <p class="percentage">0%</p>
+              </div>
+              
+              <div class="circular-progress" data-inner-circle-color="white" data-percentage="59" data-progress-color="#22D6AA" data-bg-color="#D3F7EE" >
+                <div class="inner-circle"></div>
+                <p class="percentage">0%</p>
+              </div>
+
+              
+           
+              
+              
+            </div>
+          </div> 
+          <div style="display:flex; justify-content:space-evenly; margin-bottom:5vh">
+            <span style="margin-left:9vw">Average</span>
+            <span style="margin-right:3vw;">Top</span>
+            <span style="margin-right:1vw">Me</span>
+          </div>
+          </div>
+
+          <div class="card-third">
+            <div>
+              <h5>Retirement Strategy</h5>
+              <div class="slider-container">
+                <label for="percentageSlider">Employee Contribution</label>
+                <div class="percentage-slider">
+                  <input type="range" id="percentageSlider" min="0" max="15" step="1" value="0">
+                  <div class="slider-value" id="percentageValue">0%</div>
+                </div>
+              </div>
+            
+              <div class="slider-container">
+                <label for="ageSlider">Retirement Age</label>
+                <div class="age-slider">
+
+                  <input type="range" id="ageSlider" min="1" max="100" step="1" value="1">
+                  <div class="slider-value" id="ageValue">1</div>
+                </div>
+              </div>
+            </div>
+            <hr style="height:2px;border-width:0;color:gray;background-color:rgba(128, 128, 128, 0.911)">
+            <div class="employer first-section" >
+              <h5>Employer Contribution</h5>
+              <span>8.4%</span>
+            </div>
+            <div class="employer second-section" >
+              <h5>Interest Rate</h5>
+              <span>5%</span>
+            </div>
+            <button type="button" class="btn btn-primary">Update</button>
+            <div class="docs-link">View Help Docs<span class="right-arrow"><i class='bx bx-chevron-right'></i></span></div>
+            <p class="last-section">
+              Are you Considering a <br/> <span>Housing Advance?</span> </p>
+              <span class="limited">Limited time reduced interest.</span>
+            </p>
+          </div>     
+          
+        </div>
+      <div class="mobile-cards">
+        <div class="mobile-card-first">
+          <div class="intro">
+            <img src="dummy2.jpg" alt="Image Description" />
+            <div class="text-container">
+              <h3>Hi Mike,</h3>
+              <p>Welcome back</p>
+            </div>
+          </div>
+
+          <div class="account-info">
+            <div style="display: flex; flex-direction:column; margin-left:17vw;margin-top:10vw">
+
+              <h6>Today</h6>
+              <h2>$19,892</h2>
+              <p style="font-size: small;">Account Balance</p>
+            </div>
+            <div class="flex" style="display: flex; justify-content:center;margin-top:10vw">
+
+              <div style="margin-right: 20vw;">
+                <h3>$4,000</h3>
+                <p style="font-size: small;">Year-to-Date </p>
+              </div>
+          
+            <div>
+
+              <h3>$1,892</h3>
+              <p style="font-size: small;">Total Interest</p>
+            </div>
+          </div>
+
+          <div class="mobile-dropdown">
+            <button
+              class="btn btn-primary mobile-dropdown-toggle"
+              type="button"
+              id="dropdownMenuButton"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              I want to
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </div>
+
+          <div class="transactions">
+            <h5>Recent Transactions</h5>
+            <div class="transaction">
+              <p>2020-08-07</p>
+              <h6>Withdrawal transfer to Bank-XXX11</h6>
+              <hr />
+            </div>
+          
+         
+          </div>
+        </div>
+      </div>
+      <div class="mobile-card-second ">
+        <p class="retire">Retirement Income</p>
+        <h4>Starting Year 2056</h4>
+        <h5 class="retire-text">$300,000</h5>
+        <p>My Goal</p>
+        <hr class="blue-line" />
+        <div class="result">
+          <div class="goal">
+
+            <div class="achieved">
+              <h5>59%</h5>
+              <p>Goal Achieved</p>
+              <hr class="blue-line" />
+            </div>
+          </div>
+          <div class="income">
+            <h5>K 300</h5>
+            <p>Est. Monthly Income</p>
+            <hr class="blue-line" />
+          </div>
+        </div>
+        <div class="graphs">
+      
+          <h6>Contribution Overtime</h6>
+   
+
+          <table class="charts-css column hide-data show-labels  data-spacing-10">
+
+            <thead>
+              <tr>
+                <th scope="col"> Month </th>
+                <th scope="col"> Progress </th>
+              </tr>
+            </thead>
+       
+            <tbody>
+              <tr>
+                <th scope="row"> 20 </th>
+                <td style="--size: 0.4;" class="bar"> <span class="data">20 </span> </td>
+              </tr>
+              <tr>
+               
+                <td style="--size: 0.5;" class="bar"> <span class="data">  </span> </td>
+              </tr>
+              <tr>
+                <th scope="row"> 25 </th>
+                <td style="--size: 0.6;" class="bar"> <span class="data"> 25 </span> </td>
+              </tr>
+              <tr>
+             
+                <td style="--size: 0.7;" class="bar"> <span class="data">  </span> </td>
+              </tr>
+              <tr>
+                <th scope="row"> 30 </th>
+                <td style="--size: 0.8;" class="bar"> <span class="data"> 30 </span> </td>
+              </tr>
+              <tr>
+              
+                <td style="--size:0.9;" class="bar"> <span class="data">  </span> </td>
+              </tr>
+              <tr>
+                <th scope="row"> 35 </th>
+                <td style="--size: 1.1;" class="bar"> <span class="data"> 35 </span> </td>
+              </tr>
+            
+           
+            
+            
+            </tbody>
+          
+          </table>
+        </div>
+        
+        </div>
+        <div class="mobile-card-third">
+          <div class="pears">
+            <h6>How do I compare to my peers?</h6>
+            <p>These number represent current goal achievement</p>
+          </div>
+          <div class="personal-chart">
+            <div class="personal">
+              <div class="age">
+                <p>Age:</p>
+                <span style="margin-left:8px">Under 30 <i class="fa-solid fa-caret-down" style="color:gray"></i></span>
+              </div>
+             
+              <div class="salary">
+                <p>Salary:</p>
+                <span style="margin-left:8px"> K 20 - K 30 <i class="fa-solid fa-caret-down" style="color:gray"></i></span>
+                
+              </div>
+             
+              <div class="gender">
+                <p>Gender:</p>
+                <span style="margin-left:8px"> Male <i class="fa-solid fa-caret-down" style="color:gray"></i></span>
+              </div>
+  
+            </div>
+            <div class="chart">
+              <div class="circular-progress" data-inner-circle-color="white" data-percentage="78" data-progress-color="#22D6AA" data-bg-color="#D3F7EE">
+                <div class="inner-circle"></div>
+                <p class="percentage">0%</p>
+              </div>
+              
+              
+              <div class="circular-progress" data-inner-circle-color="white" data-percentage="95" data-progress-color="#22D6AA" data-bg-color="#D3F7EE">
+                <div class="inner-circle"></div>
+                <p class="percentage">0%</p>
+              </div>
+             
+              <div class="circular-progress" data-inner-circle-color="white" data-percentage="59" data-progress-color="#22D6AA" data-bg-color="#D3F7EE" >
+                <div class="inner-circle"></div>
+                <p class="percentage">0%</p>
+              </div>
+              
+              
+           
+              
+              
+            </div>
+            <div style="display: flex;justify-content:space-around; font-weight:bold">
+              <span>Average</span>
+              <span style="padding-right: 5vw;">Top</span>
+              <span style="padding-right: 9vw;">Me</span>
+            </div>
+            <div>
+              <h6 style="font-weight: bold; margin-top:5vh;">Retirement Strategy</h6>
+              <div class="slider-container">
+                <label for="percentageSlider">Employee Contribution</label>
+                <div class="percentage-slider">
+                  <input type="range" id="percentageSlider" min="0" max="15" step="1" value="0">
+                  <div class="slider-value" id="percentageValue">0%</div>
+                </div>
+              </div>
+            
+              <div class="slider-container">
+                <label for="ageSlider">Retirement Age</label>
+                <div class="age-slider">
+
+                  <input type="range" id="ageSlider" min="1" max="100" step="1" value="1">
+                  <div class="slider-value" id="ageValue">1</div>
+                </div>
+              </div>
+            </div>
+            <div class="employer first-section" >
+              <h6>Employer Contribution</h6>
+              <span>8.4%</span>
+            </div>
+            <div class="employer second-section" >
+              <h6>Interest Rate</h6>
+              <span>5%</span>
+            </div>
+          </div> 
+          <button class="btn btn-primary">
+            Update
+          </button>
+        </div>
+      </div>
+       
+
+    </section>
+  </body>
+  <script src="script.js"></script>
+</html>
